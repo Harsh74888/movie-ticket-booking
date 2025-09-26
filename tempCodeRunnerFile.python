@@ -1,0 +1,8 @@
+import os
+
+db_file = "ticket_booking.db"
+if os.path.exists(db_file):
+    os.remove(db_file)
+    print("Database deleted successfully!")
+else:
+    print("Database file does not exist.")
